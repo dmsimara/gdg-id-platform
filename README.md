@@ -268,3 +268,24 @@ git push origin tix-123
 ---
 
 Made with ❤️ by the GDG team.
+
+---
+
+## Documentation
+
+- [docs/state.md](docs/state.md) - Operating position / handover
+- [docs/index.md](docs/index.md) - Doc inventory
+- [FLAGS.md](FLAGS.md) - Improvement register
+- [AGENTS.md](AGENTS.md) - Agent load order
+
+## Contributors
+
+This project is made possible by the GDG PUP community:
+
+| Role | Name |
+| --- | --- |
+| 💻 **Development** | [Daniella Simara](https://www.linkedin.com/in/daniella-simara) - Senior Frontend Developer |
+| 💻 **Development** | [Erwin Daguinotas](https://www.linkedin.com/in/erwin-daguinotas) - Web Development Lead |
+| 💻 **Development** | [Gerald Berongoy](https://www.linkedin.com/in/geraldberongoy) - Senior Backend Developer / Web Development Learning Head |
+| 💻 **Development** | [Rhandie Sales](https://www.linkedin.com/in/rhandie-sales) - Senior Frontend Developer / Web Development Co Lead |
+| 🚀 **CTO** | [Carlos Jerico Dela Torre](https://www.linkedin.com/in/delatorrecj/) - Chief Technology Officer (2025-2026) |
