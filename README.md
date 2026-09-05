@@ -1,10 +1,15 @@
 # GDG ID Platform
 
+[![Status: Operate](https://img.shields.io/badge/Status-Operate-green)](docs/state.md)
+[![FMD philosophy: 1.31.0](https://img.shields.io/badge/FMD%20philosophy-1.31.0-blue)](AGENTS.md)
+
+
 Modern digital ID generation for Google Developer Groups (GDG), built with Next.js, TypeScript, Tailwind, Firebase, and Google Cloud.
 
 ## Table of Contents
 
 - [About](#about)
+- [Start here](#start-here)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Quick start](#quick-start)
@@ -29,6 +34,12 @@ Highlights:
 - One-click download as PNG or PDF
 - Admin endpoints protected with Firebase Admin Auth and rate limits
 - Responsive, mobile-first UI with Tailwind CSS
+
+## Start here
+
+- **Humans:** this README, then [docs/state.md](docs/state.md)
+- **Agents:** [AGENTS.md](AGENTS.md) (state → index → FLAGS)
+- **Contributors:** table below
 
 ## Features
 
@@ -260,12 +271,13 @@ Made with ❤️ by the GDG team.
 
 ## Contributors
 
-This project is made possible by the GDG PUP community:
+This project is made possible by the GDG PUP community.
 
-| Role | Name |
-| --- | --- |
-| 💻 **Development** | [Daniella Simara](https://www.linkedin.com/in/daniella-simara) - Senior Frontend Developer |
-| 💻 **Development** | [Erwin Daguinotas](https://www.linkedin.com/in/erwin-daguinotas) - Web Development Lead |
-| 💻 **Development** | [Gerald Berongoy](https://www.linkedin.com/in/geraldberongoy) - Senior Backend Developer / Web Development Learning Head |
-| 💻 **Development** | [Rhandie Sales](https://www.linkedin.com/in/rhandie-sales) - Senior Frontend Developer / Web Development Co Lead |
-| 🚀 **CTO** | [Carlos Jerico Dela Torre](https://www.linkedin.com/in/delatorrecj/) - Chief Technology Officer (2025-2026) |
+| Name | Role | GitHub |
+| --- | --- | --- |
+| [Carlos Jerico Dela Torre](https://www.linkedin.com/in/delatorrecj) | Chief Technology Officer (2025-2026) | [@delatorrecj](https://github.com/delatorrecj) |
+| [Daniella Simara](https://www.linkedin.com/in/daniella-simara) | Senior Frontend Developer | [@dmsimara](https://github.com/dmsimara) |
+| [Erwin Daguinotas](https://www.linkedin.com/in/erwin-daguinotas) | Web Development Lead | [@SauceCode01](https://github.com/SauceCode01) |
+| [Gerald Berongoy](https://www.linkedin.com/in/geraldberongoy) | Senior Backend Developer / Web Development Learning Head | [@geraldsberongoy](https://github.com/geraldsberongoy) |
+| [Rhandie Sales](https://www.linkedin.com/in/rhandie-sales) | Senior Frontend Developer / Web Development Co Lead | [@r0undy](https://github.com/r0undy) |
+
