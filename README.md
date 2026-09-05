@@ -1,22 +1,22 @@
-# 🎓 GDG ID Platform
+# GDG ID Platform
 
 Modern digital ID generation for Google Developer Groups (GDG), built with Next.js, TypeScript, Tailwind, Firebase, and Google Cloud.
 
 ## Table of Contents
 
-- About
-- Features
-- Tech Stack
-- Getting Started
-- Environment Variables
-- Project Structure
-- API Routes
-- Security & Anti‑Spam
-- Development Workflow
-- Troubleshooting
-- Important Links
-
----
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Quick start](#quick-start)
+- [Environment Variables](#environment-variables)
+- [Project Structure](#project-structure)
+- [API Routes](#api-routes)
+- [Security & Anti-Spam](#security--anti-spam)
+- [Development Workflow](#development-workflow)
+- [Troubleshooting](#troubleshooting)
+- [Important Links](#important-links)
+- [Documentation](#documentation)
+- [Contributors](#contributors)
 
 ## About
 
@@ -26,11 +26,9 @@ Highlights:
 
 - Smart email search against a Google Sheet
 - Beautiful GDG-themed ID card rendering (Canvas)
-- One‑click download as PNG or PDF
+- One-click download as PNG or PDF
 - Admin endpoints protected with Firebase Admin Auth and rate limits
-- Responsive, mobile‑first UI with Tailwind CSS
-
----
+- Responsive, mobile-first UI with Tailwind CSS
 
 ## Features
 
@@ -50,8 +48,6 @@ DX:
 
 - TypeScript-first codebase with strict types
 - Organized app router structure and modular libs
-
----
 
 ## Tech Stack
 
@@ -98,9 +94,7 @@ Organized by category. All badges link to the official docs.
 	<a href="https://github.com/animir/node-rate-limiter-flexible" target="_blank"><img alt="rate-limiter-flexible" src="https://img.shields.io/badge/rate--limiter--flexible-8.1.0-4B5563?style=for-the-badge" /></a>
 </p>
 
----
-
-## Getting Started
+## Quick start
 
 Prerequisites:
 
@@ -118,7 +112,7 @@ npm run dev
 
 Visit http://localhost:3000
 
----
+Configure secrets in `.env.local` (see Environment Variables). Do not commit real credentials; see [FLAGS.md](FLAGS.md) for known gaps.
 
 ## Environment Variables
 
@@ -159,8 +153,6 @@ Google Sheet (for members lookup):
 NEXT_PUBLIC_SHEET_ID=
 ```
 
----
-
 ## Project Structure
 
 ```
@@ -182,8 +174,6 @@ src/
 	providers/, stores/, types/          # app context, state, types
 ```
 
----
-
 ## API Routes
 
 Public / Member:
@@ -200,13 +190,11 @@ Contact / Messages:
 
 Users (Admin):
 
-- `GET /api/users/[uid]` → fetch a user’s data by UID (admin)
+- `GET /api/users/[uid]` → fetch a user's data by UID (admin)
 
 All admin endpoints require a valid authenticated admin context (see `lib/server/serverUtils.ts`).
 
----
-
-## Security & Anti‑Spam
+## Security & Anti-Spam
 
 - Request throttling with `rate-limiter-flexible` (per-IP limits)
 - Firebase Admin Auth checks on admin endpoints
@@ -214,8 +202,6 @@ All admin endpoints require a valid authenticated admin context (see `lib/server
 - Recommended extras (optional):
   - reCAPTCHA on public forms
   - Honeypot field on contact form
-
----
 
 ## Development Workflow
 
@@ -248,8 +234,6 @@ git push origin tix-123
 
 5. Open a PR into `dev`, document changes, include issue number in the title
 
----
-
 ## Troubleshooting
 
 - Firebase Admin auth errors → verify `FIREBASE_*` env vars and private key formatting (`\n` newlines)
@@ -257,26 +241,22 @@ git push origin tix-123
 - Members search returns 500 → confirm `NEXT_PUBLIC_SHEET_ID` and that the sheet is publicly readable (or adjust access)
 - Canvas export empty → ensure images under `public/cards` are reachable and member data is loaded
 
----
-
 ## Important Links
 
 - Project Docs (SharePoint): https://docs.google.com/document/d/1l0axPJebnxow9CICbYZriG0nRyFmppqw_EEhaPnGD4o/edit?tab=t.0
 - Figma Design: https://www.figma.com/design/4JbaxIFjz3y6CQTddMWfUd/GDG--26?node-id=482-599
 - Issues: https://github.com/SauceCode01/gdg-id-platform/issues
 
----
-
 Made with ❤️ by the GDG team.
-
----
 
 ## Documentation
 
-- [docs/state.md](docs/state.md) - Operating position / handover
-- [docs/index.md](docs/index.md) - Doc inventory
-- [FLAGS.md](FLAGS.md) - Improvement register
-- [AGENTS.md](AGENTS.md) - Agent load order
+| Doc | Purpose |
+|-----|---------|
+| [State](docs/state.md) | Operating position / handover |
+| [Index](docs/index.md) | Doc inventory |
+| [FLAGS](FLAGS.md) | Improvement register |
+| [AGENTS](AGENTS.md) | Agent load order |
 
 ## Contributors
 
